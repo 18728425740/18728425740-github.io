@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>欢迎来到我的网页</title>
+    <meta charset="UTF-8">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .loader {
+            width: 100vw;
+            height: 100px;
+            line-height: 100px;
+            font-weight: bold;
+            font-family: monospace;
+            font-size: 30px;
+            color: #fff;
+            background-color: transparent;
+            text-align: right;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            white-space: nowrap;
+            animation: slideIn 10s infinite linear;
+        }
+
+        .loader:before {
+            content: "欢迎回家,别错过了今天的落日(✿◠‿◠) ";
+            position: absolute;
+            right: 0;
+            white-space: nowrap;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(100vw);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        body {
+    margin: 0;
+    padding: 0;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    
+.centered-table {
+        position: absolute;
+        left: 50%;
+        bottom: 0; 
+        transform: translateX(-50%); 
+        border-collapse: collapse;
+        background-image: url(2.jpg); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 80%; 
+        height: 750px; 
+        margin-bottom: 70px;
+        border: 1px solid #fff; 
+        color: #fff; 
+    }
+
+    .centered-table td {
+        border: 1px solid #fff;
+        padding: 10px;
+        background-color: transparent; 
+        text-align: center; 
+    }
+
+    .full-width-table {
+            width: 100%; 
+            position: fixed;
+            bottom: 0; 
+            border-collapse: collapse;
+            background-color: transparent; 
+        }
+
+       .full-width-table td {
+            border: 1px solid rgba(132, 199, 101, 0.747); 
+            color: #fff;
+           height: 30px; 
+            text-align: center; 
+        }
+
+      
+
+
+    </style>
+
+</head>
+<body>
+<div class="loader"></div>
+
+<audio id="myAudio" autoplay loop>
+    <source src="Celing Dion - My Heart Will Go on.mp3" type="audio/mpeg">
+    您的浏览器不支持 audio 元素。
+</audio>
+<button onclick="document.getElementById('myAudio').play()">🎶</button>
+
+<script>
+<button id="playButton" onclick="document.getElementById('myAudio').play()">🎶</button>
+</script>
+
+<table class="centered-table">
+
+    <tr>
+        <td colspan="7" style="font-family: 'STXinwei', serif; font-size: 55px; font-weight: bold; color: #fff;">大学计算机基础</td>
+        
+    </tr>
+    <tr>
+        <td colspan="2"><a href="index.html" style="color: #fff; text-decoration: none;font-size: 40px; font-family: 'LiSu', serif; " >主页</a></td>
+       
+        <td ><a href="404.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 25px; font-family: 'KaiTi', serif; " >教学大纲</a></td>
+        <td ><a href="404.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 25px; font-family: 'KaiTi', serif; " >教学进度</a></td>
+        <td ><a href="教师队伍.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 25px; font-family: 'KaiTi', serif; " >教师队伍</a></td>
+        <td ><a href="404.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 25px; font-family: 'KaiTi', serif; " >教学承诺</a></td>
+        <td ><a href="404.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 25px; font-family: 'KaiTi', serif; " >课程规划</a></td>
+        
+    </tr>
+ <tr>
+    <td colspan="2"><a href="静态网页设计指导.htm" target="_blank" style="color: #fff; text-decoration: none;font-size: 23px; font-family: 'KaiTi', serif; " >静态网页设计指导</a></td>
+       
+        <td colspan="5" rowspan="5">
+
+            <img src="9.jpg" alt="老师:顾刚" style="max-width: 400px; max-height: 250px;margin-right: 80px;">
+            <img src="10.jpg" alt="学生:杨睿祥" style="max-width: 400px; max-height: 250px;">
+            <br>
+            <span style="color: #fff; font-family: 'KaiTi'; font-size: 28px; margin-right: 100px;">老师:顾刚</span>
+            <span style="color: #fff; font-family: 'KaiTi'; font-size: 28px; margin-left: 200px;">学生:杨睿祥</span>
+           
+
+
+        </td>
+        
+ </tr>
+ <tr>
+    <td colspan="2"><a href="WEB.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 23px; font-family: 'KaiTi', serif; " >Web服务器创建指导</a></td>
+       
+        
+ </tr>
+ <tr>
+    <td colspan="2"><a href="网络实验报告模板.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 23px; font-family: 'KaiTi', serif; " >网络实验报告模板</a></td>
+       
+        
+ </tr>
+ <tr>
+    <td colspan="2"><a href="图像实验题目1.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 23px; font-family: 'KaiTi', serif; " >图像实验题目1</a></td>
+       
+       
+ </tr>
+ <tr> 
+     <td colspan="2"><a href="图像实验题目2.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 23px; font-family: 'KaiTi', serif; " >图像实验题目2</a></td>
+       
+   
+</tr>
+ <tr>
+    <td colspan="7" style="font-family: 'KaiTi', serif; font-size: 28px; font-weight: bold; color: #fff;">版权及联系方法:西安交通大学计算机教学实验中心</td>
+       
+ </tr>
+
+
+</table>
+
+<table class="full-width-table">
+    <tr>
+        <td ><a href="西安交通大学.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 20px; font-family: 'LiSu', serif; " >回到交大</a></td>
+        <td><a href="图片来源.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 20px; font-family: 'LiSu', serif;">图片来源</a></td>
+        <td><a href="音乐来源.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 20px; font-family: 'LiSu', serif;">音乐来源</a></td>
+        <td><a href="给我留言.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 20px; font-family: 'LiSu', serif;">给我留言</a></td>
+        <td><a href="了解更多.html" target="_blank" style="color: #fff; text-decoration: none;font-size: 20px; font-family: 'LiSu', serif;">了解更多</a></td>
+    </tr>
+</table>
+
+</body>
+</html>

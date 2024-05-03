@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>这片区域还未开放</title>
+    <meta charset="UTF-8">
+</head>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+  height: 100px;
+}
+
+h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+  font-family: 'Titan One', cursive;
+  font-size: 80px;
+  color: #FFF;
+  text-shadow: 0 1px 0 #CCC,
+               0 2px 0 #CCC,
+               0 3px 0 #CCC,
+               0 4px 0 #CCC,
+               0 5px 0 #CCC,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               
+}
+
+h1 span:nth-child(2) { animation-delay: .1s; }
+h1 span:nth-child(3) { animation-delay: .2s; }
+h1 span:nth-child(4) { animation-delay: .3s; }
+h1 span:nth-child(5) { animation-delay: .4s; }
+h1 span:nth-child(6) { animation-delay: .5s; }
+h1 span:nth-child(7) { animation-delay: .6s; }
+h1 span:nth-child(8) { animation-delay: .7s; }
+
+
+.centered-button {
+            display: block;
+            text-align: center;
+            margin-top: 200px; 
+}
+
+.button-3d {
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            color: white;
+            background-color: #008CBA;
+            border: none;
+            border-bottom: 4px solid #005f73;
+            border-radius: 5px;
+        }
+
+        .button-3d:active {
+            transform: translateY(4px);
+            border-bottom: none;
+        }
+
+
+</style>
+
+<body>
+
+    <h1 align="middle">
+  <span>这</span>
+  <span>片</span>
+  <span>区</span>
+  <span>域</span>
+  <span>还</span>
+  <span>未</span>
+  <span>开</span>
+  <span>放</span>
+  <br>
+  <span>以</span>
+  <span>后</span>
+  <span>再</span>
+  <span>来</span>
+  <span>探</span>
+  <span>索</span>
+  <span>吧</span>
+</h1>
+
+<div class="centered-button">
+    <a href="index.html" class="button-3d" >Home</a>
+</div>
+
+
+
+</body>
+
+
+</html>
